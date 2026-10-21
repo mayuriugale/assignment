@@ -1,5 +1,5 @@
 
-# Marvellous Logic Building Assignment 4A
+# Marvellous Logic Building Assignment4A
 
 - Language: C
 - Compiler: gcc (MinGW)
