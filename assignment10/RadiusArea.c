@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+double CircleArea(float fRadius)
+{
+    const float PI = 3.14f;
+    double dArea = 0.0;
+
+    // Updater to handle negative radius input
+    if(fRadius < 0)
+    {
+        fRadius = -fRadius;
+    }
+
+    dArea = PI * fRadius * fRadius;
+
+    return dArea;
+}
+
+int main()
+{
+    float fValue = 0.0;
+    double dRet = 0.0;
+
+    printf("Enter radius: ");
+    scanf("%f", &fValue);
+
+    dRet = CircleArea(fValue);
+
+    printf("Area of circle is: %.4lf\n", dRet);
+
+    return 0;
+}
